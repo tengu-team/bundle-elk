@@ -1,0 +1,5 @@
+{
+  "name"    : "Open Source Elastic Stack",
+  "summary" : "This Workspace contains the three components of the Elastic Stack: the Elasticsearch data store, the data flow engine Logstash and Kibana as presentation layer.",
+  "tags"    : ["default"]
+}
