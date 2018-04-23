@@ -3,10 +3,8 @@ applications:
   openjdk:
     charm: 'cs:openjdk-5'
   elasticsearch:
-    charm: 'cs:elasticsearch-25'
+    charm: 'cs:~tengu-team/elasticsearch-3'
     num_units: 1
-    options:
-      es-heap-size: 1
     to:
       - '0'
   logstash:
@@ -15,7 +13,7 @@ applications:
     to:
       - '1'
   kibana:
-    charm: 'cs:kibana-19'
+    charm: 'cs:~omnivector/kibana-1'
     num_units: 1
     expose: true
     to:
@@ -30,6 +28,7 @@ relations:
 machines:
   '0':
     series: xenial
+    constraints: 'mem=3000'
   '1':
     series: xenial
   '2':
