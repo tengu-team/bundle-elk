@@ -24,7 +24,7 @@ relations:
   - - 'logstash:elasticsearch'
     - 'elasticsearch:client'
   - - 'elasticsearch:client'
-    - 'kibana:rest'
+    - 'kibana:elasticsearch'
 machines:
   '0':
     series: xenial
